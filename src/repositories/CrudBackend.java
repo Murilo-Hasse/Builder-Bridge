@@ -2,7 +2,6 @@ package repositories;
 
 //DEVICE
 
-import java.util.List;
 
 public interface CrudBackend<T> {
     T create(T entity);
@@ -13,5 +12,5 @@ public interface CrudBackend<T> {
 
     Boolean delete(String id);
 
-    List<T> findAll();
+    String findAll();
 }

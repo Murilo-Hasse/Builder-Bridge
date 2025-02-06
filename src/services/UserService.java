@@ -40,7 +40,7 @@ public class UserService extends CrudOperations <UserDTO>{
     }
 
     @Override
-    public List<UserDTO> findAll(String backendKey) {
+    public String findAll(String backendKey) {
         return selectBackend(backendKey).findAll();
     }
 }

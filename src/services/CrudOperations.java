@@ -5,11 +5,10 @@ import repositories.CrudBackend;
 import java.util.List;
 import java.util.Map;
 
-//Remote
+
 
 public abstract class CrudOperations<T> {
 
-    // Armazena múltiplos backends, identificados por chave
     protected Map<String, CrudBackend<T>> backends;
 
     public CrudOperations(Map<String, CrudBackend<T>> backends) {
@@ -33,5 +32,5 @@ public abstract class CrudOperations<T> {
 
     public abstract boolean delete( String id, Boolean backEndRule);
 
-    public abstract List<T> findAll(String backendKey);
+    public abstract String findAll(String backendKey);
 }

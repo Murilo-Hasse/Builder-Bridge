@@ -33,4 +33,17 @@ public class UserDTO {
 
     public Boolean getGoogleAccount() { return isGoogleAccount; }
     public void setGoogleAccount(Boolean googleAccount) { isGoogleAccount = googleAccount; }
+
+    @Override
+    public String toString() {
+        return "UserDTO{" +
+                "description='" + description + '\'' +
+                ", id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", pointsRank=" + pointsRank +
+                ", pointsCasual=" + pointsCasual +
+                ", isGoogleAccount=" + isGoogleAccount +
+                '}';
+    }
 }
